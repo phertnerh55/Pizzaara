@@ -1,10 +1,40 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 .nav {
-  background-color:$light-gray;
+  background-color: $light-gray;
 }
 .nav {
   &__container {
-    @include flex(space-between,center);
+    padding: 1em;
+    @include flex(space-between, center);
+  }
+  &__center {
+    cursor: pointer;
+
+    ul {
+      @include flex(space-between, center);
+      li {
+        padding: 1.5em;
+        a {
+          color: $black;
+        }
+        &:hover {
+          background-color: $orange;
+
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  &__right {
+    cursor: pointer;
+    ul {
+      @include flex(space-between, center);
+      li {
+        padding: 2em;
+      }
+    }
   }
 }

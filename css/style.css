@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
 }
 
 .container {
@@ -22,8 +23,42 @@ a {
 }
 
 .nav__container {
+  padding: 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+.nav__center {
+  cursor: pointer;
+}
+.nav__center ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.nav__center ul li {
+  padding: 1.5em;
+}
+.nav__center ul li a {
+  color: #000;
+}
+.nav__center ul li:hover {
+  background-color: #eea539;
+}
+.nav__center ul li:hover a {
+  color: #fff;
+}
+.nav__right {
+  cursor: pointer;
+}
+.nav__right ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.nav__right ul li {
+  padding: 2em;
 }
