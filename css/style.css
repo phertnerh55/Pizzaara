@@ -160,11 +160,12 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  margin: 2em;
+}
+.menu__container ul li {
+  padding: 2em 0;
 }
 .menu__container ul li:first-child {
-  text-decoration: underline;
-  color: #eea539;
+  border-bottom: 5px solid #eea539;
 }
 .menu__types {
   margin-top: 8em;
@@ -202,26 +203,55 @@ a {
   border: none;
   display: block;
   margin: auto;
+  margin-top: 2em;
 }
 
 .why-us {
-  margin: 4em 0;
+  margin: 10em 0;
 }
 .why-us__container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
 }
 .why-us__container--orange {
   color: #eea539;
 }
 .why-us__right {
-  width: 50%;
+  flex: 1;
 }
 .why-us__right h2 {
   margin: 1em 0;
 }
 .why-us__left {
-  width: 50%;
+  height: 100%;
+  flex: 1;
+  background: url("../../images/why-us.png") no-repeat center center/cover;
+}
+.why-us__cards {
+  background-color: #f4f7fb;
+  padding: 2em;
+  margin-top: 2em;
+}
+
+.cards__container {
+  background-color: #fff;
+  margin: 3em;
+  padding: 3em;
+  border-radius: 6px;
+  gap: 2em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.cards__container__img {
+  border-radius: 50%;
+  background-color: #000;
+  width: 5vw;
+  padding: 1em;
+}
+
+.help--orange {
+  color: #eea539;
 }

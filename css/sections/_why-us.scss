@@ -1,21 +1,47 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
 .why-us {
-  margin: 4em 0;
+  margin: 10em 0;
   &__container {
-    @include flex(flex-start, flex-start);
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
 
     &--orange {
       color: $orange;
     }
   }
   &__right {
-    width: 50%;
+    flex: 1;
     h2 {
       margin: 1em 0;
     }
   }
   &__left {
-    width: 50%;
+    height: 100%;
+    flex: 1;
+    background: url("../../images/why-us.png") no-repeat center center/cover;
+    
+  }
+  &__cards {
+    background-color: $light-gray;
+    padding: 2em;
+    margin-top: 2em;
+  }
+}
+.cards__container {
+  background-color: $white;
+  margin: 3em;
+  padding: 3em;
+  border-radius: 6px;
+  gap: 2em;
+  @include flex(flex-start, center);
+
+  &__img {
+    border-radius: 50%;
+    background-color: $black;
+    width: 5vw;
+    padding: 1em;
   }
 }
