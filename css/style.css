@@ -80,6 +80,7 @@ a {
   border: 1px solid black;
   border-radius: 7px;
   padding-left: 1em;
+  margin: 3em 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -87,13 +88,40 @@ a {
 }
 .hero__left__search form {
   width: 100%;
+  font-size: 0;
 }
 .hero__left__search form input[type=text] {
   width: 80%;
 }
 .hero__left__search form button {
-  width: 10%;
-  padding: 3em;
+  width: 20%;
+  padding: 3em 0;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: none;
+  background-color: #000;
+  color: #fff;
+}
+.hero__left__stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 3em 0;
+}
+.hero__left__stats__gray {
+  background-color: #f4f7fb;
+  padding: 2em;
+  text-align: center;
+}
+.hero__left__stats__gray img {
+  margin-bottom: 3em;
+  background-color: #000;
+  border-radius: 50%;
+  width: 4vw;
+  padding: 1em;
 }
 .hero__left, .hero__right {
   flex: 1;
@@ -102,4 +130,98 @@ a {
   border: none;
   outline: none;
   padding: 3em;
+}
+.hero__right {
+  text-align: center;
+}
+.hero__right__small {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.hero__right__small img {
+  width: 200px;
+  height: 200px;
+}
+
+.menu__container p {
+  text-align: center;
+}
+.menu__container h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.menu__container--orange {
+  color: #eea539;
+}
+.menu__container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 2em;
+}
+.menu__container ul li:first-child {
+  text-decoration: underline;
+  color: #eea539;
+}
+.menu__types {
+  margin-top: 8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  line-height: 2;
+}
+.menu__types img {
+  width: 300px;
+  height: 300px;
+  margin-top: -10em;
+}
+.menu__types--gray {
+  background-color: #f4f7fb;
+  margin: 3em;
+  padding: 1.5em;
+}
+.menu__types button {
+  background-color: #000;
+  color: #fff;
+  padding: 1em;
+  width: 200px;
+  margin-bottom: -3.5em;
+}
+.menu__btn {
+  background-color: #eea539;
+  color: #fff;
+  padding: 1em;
+  width: 200px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  display: block;
+  margin: auto;
+}
+
+.why-us {
+  margin: 4em 0;
+}
+.why-us__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.why-us__container--orange {
+  color: #eea539;
+}
+.why-us__right {
+  width: 50%;
+}
+.why-us__right h2 {
+  margin: 1em 0;
+}
+.why-us__left {
+  width: 50%;
 }

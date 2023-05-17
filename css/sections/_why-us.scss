@@ -1,0 +1,21 @@
+@use "../utilities/mixins" as *;
+@use "../utilities/variables" as *;
+.why-us {
+  margin: 4em 0;
+  &__container {
+    @include flex(flex-start, flex-start);
+
+    &--orange {
+      color: $orange;
+    }
+  }
+  &__right {
+    width: 50%;
+    h2 {
+      margin: 1em 0;
+    }
+  }
+  &__left {
+    width: 50%;
+  }
+}

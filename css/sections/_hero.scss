@@ -18,17 +18,43 @@
       border: 1px solid black;
       border-radius: 7px;
       padding-left: 1em;
+      margin: 3em 0;
 
       @include flex(flex-start, center);
 
       form {
         width: 100%;
-        input[type="text"]{
-            width: 80%;
+        font-size: 0;
+        input[type="text"] {
+          width: 80%;
         }
-        button{
-            width: 10%;
-            padding: 3em;
+        button {
+          width: 20%;
+          padding: 3em 0;
+          border-top-right-radius: 7px;
+          border-bottom-right-radius: 7px;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          border: none;
+          background-color: $black;
+          color: $white;
+        }
+      }
+    }
+    &__stats {
+      @include flex(space-between, center);
+      margin: 3em 0;
+
+      &__gray {
+        background-color: $light-gray;
+        padding: 2em;
+        text-align: center;
+        img {
+          margin-bottom: 3em;
+          background-color: $black;
+          border-radius: 50%;
+          width: 4vw;
+          padding: 1em;
         }
       }
     }
@@ -42,5 +68,17 @@
     border: none;
     outline: none;
     padding: 3em;
+  }
+  &__right {
+    text-align: center;
+
+    &__small {
+      @include flex(space-between, center);
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    }
   }
 }
