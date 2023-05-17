@@ -228,17 +228,20 @@ a {
   flex: 1;
   background: url("../../images/why-us.png") no-repeat center center/cover;
 }
+.why-us__top {
+  padding: 3em;
+}
 .why-us__cards {
   background-color: #f4f7fb;
-  padding: 2em;
+  padding: 1em;
   margin-top: 2em;
 }
 
 .cards__container {
   background-color: #fff;
   margin: 3em;
-  padding: 3em;
-  border-radius: 6px;
+  padding: 1em;
+  border-radius: 8px;
   gap: 2em;
   display: flex;
   justify-content: flex-start;

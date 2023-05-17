@@ -24,17 +24,20 @@
     background: url("../../images/why-us.png") no-repeat center center/cover;
     
   }
+  &__top{
+    padding: 3em;
+  }
   &__cards {
     background-color: $light-gray;
-    padding: 2em;
+    padding: 1em;
     margin-top: 2em;
   }
 }
 .cards__container {
   background-color: $white;
   margin: 3em;
-  padding: 3em;
-  border-radius: 6px;
+  padding: 1em;
+  border-radius: 8px;
   gap: 2em;
   @include flex(flex-start, center);
 
