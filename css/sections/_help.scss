@@ -1,7 +1,46 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
-.help{
-  &--orange{
+.help {
+  margin: 5em 0;
+  &--orange {
     color: $orange;
-  }  
+  }
+  h5{
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+    font-size: 3rem;
+  }
+  &__container {
+    @include flex(space-between,center);
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: 1fr;
+    
+    text-align: center;
+    padding: 3em 0;
+    
+  }
+  &__img {
+    background-color: $light-gray;
+
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    margin-top: -2em;
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin: 3 auto;
+    }
+  }
+  &__support {
+    background-color: $light-gray;
+    padding:1em;
+    width: 30%;
+  }
 }

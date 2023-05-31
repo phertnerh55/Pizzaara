@@ -12,19 +12,25 @@
       text-align: center;
     }
     &--orange {
-      color: $orange;
-    }
+      color: $orange}
+     
 
     ul {
       @include flex(space-between, center);
       li{
         padding: 2em 0;
-       &:first-child {
-          border-bottom: 5px solid $orange;
-        }
+        cursor: pointer;
+      //  &:first-child {
+      //     border-bottom: 5px solid $orange;
+      //   }
       }
       
     }
+  }
+  &__lists{
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 2px solid grey;
   }
   &__types {
     margin-top: 8em;
@@ -63,4 +69,8 @@
     margin: auto;
     margin-top: 2em;
   }
+}
+.active{
+  border-bottom: 3px solid $orange;
+  color:$orange;
 }

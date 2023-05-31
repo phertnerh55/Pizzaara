@@ -11,22 +11,27 @@
   }
 
   &__left {
+    margin-top: 2em;
     &--orange {
       color: $orange;
     }
     &__search {
-      border: 1px solid black;
+      border: 3px solid $light-gray;
       border-radius: 7px;
       padding-left: 1em;
       margin: 3em 0;
+      outline: none;
 
       @include flex(flex-start, center);
 
       form {
         width: 100%;
         font-size: 0;
+    
         input[type="text"] {
           width: 80%;
+          
+          
         }
         button {
           width: 20%;
@@ -71,13 +76,16 @@
   }
   &__right {
     text-align: center;
+    
 
     &__small {
-      @include flex(space-between, center);
+      @include flex(center, center);
+      gap: 1em;
+      
 
       img {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
       }
     }
   }

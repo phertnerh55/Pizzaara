@@ -1,0 +1,76 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+.footer {
+  background-color: $black;
+  color: $white;
+  padding: 3em;
+
+  &__container {
+    @include flex(space-between, center);
+    
+  }
+  h4 {
+    
+    font-size: 2rem;
+  }
+  &__icons {
+    p {
+    
+      font-size: 1rem;
+      padding: 2.5em 0;
+    }
+    ul {
+      @include flex(space-between, center);
+      li {
+        gap: 0.5em;
+      }
+    }
+  }
+  &__links {
+    ul{
+        li {
+    padding-top: 1em;
+    a{
+        color: $white;
+        &:hover{
+            color: $orange;
+        }
+    }
+
+
+        }
+    }
+  }
+  &__subscribe{
+    
+    h4{
+      padding-bottom: 2em;
+      
+    }
+    
+    form{
+      font-size: 0;
+      
+    }
+    input{
+      padding: 2em;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border: none;
+      outline: none;
+
+      
+    }
+    button{
+      padding: 2em;
+      color:$white;
+      background-color: $orange;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border: none;
+      outline: none;
+
+    }
+  }
+
+}

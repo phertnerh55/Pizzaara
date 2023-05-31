@@ -8,6 +8,18 @@
     padding: 1em;
     @include flex(space-between, center);
   }
+  &__card {
+    position: absolute;
+    min-height: 200px;
+    width: 400px;
+    background-color: #ffff;
+    top: 70%;
+
+    left: 0;
+    text-align: center;
+    box-shadow: 1px 1px 5px darkgray;
+    display: none;
+  }
   &__center {
     cursor: pointer;
 
@@ -34,7 +46,25 @@
       @include flex(space-between, center);
       li {
         padding: 2em;
+        position: relative;
+        &:first-child {
+          &:hover {
+            span:last-child {
+              display: block;
+            }
+          }
+        }
       }
+    }
+    &__counter {
+      @include flex(center, center);
+      height: 30px;
+      width: 30px;
+      background-color: $orange;
+      border-radius: 50%;
+      position: absolute;
+      right: 10%;
+      top: 20%;
     }
   }
 }

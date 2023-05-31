@@ -40,11 +40,16 @@
             <div class="nav__right">
               <ul>
                 <li>
+                  <span id="counter" class="nav__right__counter">0</span>
                   <img
                     src="images/shopping-cart.png"
                     alt="shopping cart icon"
                     width="40"
                   />
+                  <span id="cart-preview" class="nav__card">
+                    <h3>Cart</h3>
+                    <!-- <p>Cart is empty</p> -->
+                  </span>
                 </li>
                 <li>
                   <img
@@ -129,41 +134,151 @@
             <h2>
               <span class="menu__container--orange">Special Menu</span> For You
             </h2>
-            <ul>
-              <li>
-                <span class="menu__container--orange"
-                  ><strong>Chicken Pizza</strong></span
-                >
-              </li>
-              <li><strong>Pepperoni</strong></li>
-              <li><strong>Margherita</strong></li>
-              <li><strong>Hawaiian</strong></li>
-              <li><strong>Meat Lover’s Pizza</strong></li>
-            </ul>
-            <hr />
-            <div class="menu__types">
-              <div class="menu__types--gray">
-                <img src="images/barbecue-chicken-pizza.png" alt="" />
-                <p><strong>BBQ Chicken Pizza</strong></p>
-                <p>(Cheese with Shrimp)</p>
+            <div class="menu__lists">
+              <ul>
+                <li class="select">Chicken Pizza</li>
+                <li class="select">Pepperoni</li>
+                <li class="select">Margherita</li>
+                <li class="select">Hawaiian</li>
+                <li class="select">Meat Lover’s Pizza</li>
+              </ul>
+            </div>
 
-                <p><strong>Ksh. 1500</strong></p>
-                <button type="submit"><strong> Add to Cart</strong></button>
-              </div>
-              <div class="menu__types--gray">
-                <img src="images/tandoori-chicken.png" alt="" />
-                <p><strong>Tandoori Chicken Pizza</strong></p>
-                <p>(Cheese with Shrimp)</p>
-                <p><strong>1500</strong></p>
-                <button type="submit"><strong>Add to Cart</strong></button>
-              </div>
-              <div class="menu__types--gray">
-                <img src="images/chicken-kebab.png" alt="" />
+            <div class="menu__item chicken">
+              <div class="menu__types">
+                <div class="menu__types--gray">
+                  <img src="images/barbecue-chicken-pizza.png" alt="" />
+                  <p><strong>BBQ Chicken Pizza</strong></p>
+                  <p>(Cheese with Shrimp)</p>
 
-                <p><strong>Chicken Kebab Pizza</strong></p>
-                <p>(Cheese with Shrimp)</p>
-                <p><strong>1500</strong></p>
-                <button type="submit"><strong>Add to Cart</strong></button>
+                  <p data-price="1500"><strong>Ksh. 1500</strong></p>
+                  <button type="submit" class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu__types--gray">
+                  <img src="images/tandoori-chicken.png" alt="" />
+                  <p><strong>Tandoori Chicken Pizza</strong></p>
+                  <p>(Cheese with Shrimp)</p>
+                  <p data-price="1500"><strong>Ksh 1500</strong></p>
+                  <button type="submit" class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu__types--gray">
+                  <img src="images/chicken-kebab.png" alt="" />
+
+                  <p><strong>Chicken Kebab Pizza</strong></p>
+                  <p>(Cheese with Shrimp)</p>
+                  <p data-price="1500"><strong> Ksh 1500</strong></p>
+                  <button type="submit" class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="menu__item Pepperoni">
+              <div class="menu__types">
+                <div class="menu__types--gray">
+                  <img src="images/barbecue-chicken-pizza.png" alt="" />
+                  <p><strong>BBQ Pepperoni Pizza</strong></p>
+                  <p>(Cheese with Shrimp)</p>
+
+                  <p><strong>Ksh. 1500</strong></p>
+                  <button type="submit" class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu__types--gray">
+                  <img src="images/tandoori-chicken.png" alt="" />
+                  <p><strong>Tandoori Pepperoni Pizza</strong></p>
+                  <p>(Cheese with Shrimp)</p>
+                  <p data-price="1500"><strong> Ksh 1500</strong></p>
+                  <button type="submit" class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu__types--gray">
+                  <img src="images/chicken-kebab.png" alt="" />
+
+                  <p><strong>Chicken Pepperoni Pizza</strong></p>
+                  <p>(Cheese with Shrimp)</p>
+                  <p data-price="1500"><strong>Ksh 1500</strong></p>
+                  <button type="submit" class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu__item Margherita">
+              <div class="menu__types">
+                <div class="menu__types--gray">
+                  <img src="images/barbecue-chicken-pizza.png" alt="" />
+                  <p><strong>BBQ Margherita Pizza</strong></p>
+                  <p>(Cheese with Shrimp)</p>
+
+                  <p data-price="1500"><strong> Ksh. 1500</strong></p>
+                  <button type="submit" class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu__types--gray">
+                  <img src="images/tandoori-chicken.png" alt="" />
+                  <p><strong>Tandoori Margherita Pizza</strong></p>
+                  <p>(Cheese with Shrimp)</p>
+                  <p data-price="1500"><strong> Ksh 1500</strong></p>
+                  <button type="submit" class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu__types--gray">
+                  <img src="images/chicken-kebab.png" alt="" />
+
+                  <p><strong>Chicken Margherita Pizza</strong></p>
+                  <p>(Cheese with Shrimp)</p>
+                  <p data-price="1500"><strong> Ksh 1500</strong></p>
+                  <button type="submit" class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="menu__item Hawaiian">
+              <div class="menu__types">
+                <div class="menu__types--gray">
+                  <img src="images/barbecue-chicken-pizza.png" alt="" />
+                  <p><strong>BBQ Hawaiian Pizza</strong></p>
+                  <p>(Cheese with Shrimp)</p>
+
+                  <p data-price="1500"><strong> Ksh. 1500</strong></p>
+                  <button type="submit" class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu__types--gray">
+                  <img src="images/tandoori-chicken.png" alt="" />
+                  <p><strong>Tandoori Hawaiian Pizza</strong></p>
+                  <p>(Cheese with Shrimp)</p>
+                  <p data-price="1500"><strong>Ksh 1500</strong></p>
+                  <button type="submit" class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu__types--gray">
+                  <img src="images/chicken-kebab.png" alt="" />
+
+                  <p><strong>Chicken Hawaiian Pizza</strong></p>
+                  <p>(Cheese with Shrimp)</p>
+                  <p data-price="1500"><strong>Ksh 1500</strong></p>
+                  <button type="submit" class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu__item meat">
+              <div class="menu__types">
+                <div class="menu__types--gray">
+                  <img src="images/barbecue-chicken-pizza.png" alt="" />
+                  <p><strong>BBQ Meat Lover’s Pizza</strong></p>
+                  <p>(Cheese with Shrimp)</p>
+
+                  <p data-price="1500"><strong>Ksh. 1500</strong></p>
+                  <button type="submit" class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu__types--gray">
+                  <img src="images/tandoori-chicken.png" alt="" />
+                  <p><strong>Tandoori Meat Lover’s Pizza</strong></p>
+                  <p>(Cheese with Shrimp)</p>
+                  <p data-price="1500"><strong>Ksh 1500</strong></p>
+                  <button type="submit" class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu__types--gray">
+                  <img src="images/chicken-kebab.png" alt="" />
+
+                  <p><strong>Chicken Meat Lover’s Pizza</strong></p>
+                  <p>(Cheese with Shrimp)</p>
+                  <p data-price="1500"><strong> Ksh 1500</strong></p>
+                  <button type="submit" class="add-to-cart">Add to Cart</button>
+                </div>
               </div>
             </div>
             <button class="menu__btn" type="submit">View More</button>
@@ -173,7 +288,7 @@
       <section class="why-us">
         <div class="container">
           <div class="why-us__container">
-            <div class="why-us__left">gygygyggygygyyg</div>
+            <div class="why-us__left"></div>
             <div class="why-us__right">
               <div class="why-us__top">
                 <h5>
@@ -250,62 +365,73 @@
             >
           </h3>
           <div class="help__container">
-            <div>
-              <div>
+            <div class="help__support">
+              <div class="help__img">
                 <img src="images/mail.png" alt="" />
               </div>
               <h5><strong>Email Address</strong></h5>
               <p>pizaaradeliveries@info.com</p>
             </div>
-            <div>
-              <div>
+            <div class="help__support">
+              <div class="help__img">
                 <img src="images/live-support.png" alt="" />
               </div>
               <h5><strong> Live Support</strong></h5>
-              <p>Get live support now</p>
+              <p>
+                Get live support now <i class="fa-solid fa-arrow-right"></i>
+              </p>
             </div>
-            <div>
+            <div class="help__support">
               <div>
-                <img src="images/phone.png" alt="" />
+                <div class="help__img">
+                  <img src="images/phone.png" alt="" />
+                </div>
+                <h5><strong>Phone Number</strong></h5>
+                <p>+2547 11 555 888</p>
               </div>
-              <h5><strong>Phone Number</strong></h5>
-              <p>+2547 11 555 888</p>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <div>
-          <img src="images/logo.svg" alt="" />
-          <h4>Stay Connected</h4>
-          <ul>
-            <li><img src="images/facebook.png" alt="" /></li>
-            <li><img src="images/instagram.png" alt="" /></li>
-            <li><img src="images/twitter.png" alt="" /></li>
-            <li><img src="images/linkedin.png" alt="" /></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Quick Links</h4>
-          <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Shop</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Subscribe To Our Newsletter to stay updated.</h4>
-          <div>
-            <form action="">
-              <input type="text" placeholder="Email Address" />
-              <button type="submit">Subscribe</button>
-            </form>
+        <div class="footer__container">
+          <div class="footer__icons">
+            <img src="images/logo_light.svg" alt="" />
+            <p><strong> Stay Connected</strong></p>
+            <ul>
+              <li><img width="40" src="images/facebook.png" alt="" /></li>
+              <li><img width="40" src="images/instagram.png" alt="" /></li>
+              <li><img width="40" src="images/twitter.png" alt="" /></li>
+              <li><img width="40" src="images/linkedin.png" alt="" /></li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="">Home </a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer__subscribe">
+            <h4>
+              Subscribe To Our Newsletter to <br />
+              stay updated.
+            </h4>
+            <div>
+              <form action="">
+                <input type="text" placeholder="Email Address" />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+    <script src="Js/app.js"></script>
+    <script src="Js/cart.js"></script>
   </body>
 </html>
